@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'components/description_place.dart';
+import 'components/review_list.dart';
+import 'components/gradient_back.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,11 +17,17 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          appBar: AppBar(
-              leading: Icon(Icons.arrow_back),
-              title: Text('Learning Flutter')
-          ),
-          body: new DescriptionPlace('Bahamas', 4, descriptionText)
+          body: Stack(
+            children: <Widget>[
+              ListView(
+                children: <Widget>[
+                  new DescriptionPlace('Bahamas', 4, descriptionText),
+                  new ReviewList(),
+                ],
+              ),
+              GradientBack()
+            ],
+          )
         )
     );
   }
