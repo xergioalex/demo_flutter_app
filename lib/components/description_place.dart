@@ -75,18 +75,19 @@ class DescriptionPlace extends StatelessWidget{
 
     final text_description = Container(
       margin: EdgeInsets.only(
-          top: 20.0,
-          left: 20.0,
-          right: 20.0
+        top: 20.0,
+        left: 20.0,
+        right: 20.0
       ),
       child: Text(
         descriptionText,
         textAlign: TextAlign.left,
         style: TextStyle(
-            fontSize: 16.0,
-            fontWeight: FontWeight.bold,
-            color: Color(0xFF56575a),
-            letterSpacing: 0.5
+          fontFamily: 'Lato',
+          fontSize: 16.0,
+          fontWeight: FontWeight.bold,
+          color: Color(0xFF56575a),
+          letterSpacing: 0.5
         ),
       ),
     );
