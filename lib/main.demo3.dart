@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                       color: Color.fromRGBO(0, 0, 0, 0.4),
                       child: Center(
                           child: Text(
-                              'Reto 2 Platzi',
+                              'Zelda Breath of The Wild',
                               style: TextStyle(
                                   color: Color.fromRGBO(255, 255, 255, 1),
                                   fontSize: 30
