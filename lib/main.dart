@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'components/description_place.dart';
-import 'components/review_list.dart';
-import 'components/gradient_back.dart';
-import 'components/header_appbar.dart';
+import 'components/page_trips.dart';
+
+
 
 void main() => runApp(MyApp());
 
@@ -17,19 +16,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          body: Stack(
-            children: <Widget>[
-              ListView(
-                children: <Widget>[
-                  new DescriptionPlace('Bahamas', 4, descriptionText),
-                  new ReviewList(),
-                ],
-              ),
-              new HeaderAppBar()
-            ],
-          )
-        )
+        home: PageTrips()
     );
   }
 }
